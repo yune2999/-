@@ -1,0 +1,56 @@
+/* Personal photographic collage. Visible wording remains accessible HTML. */
+.portrait-hero { background: #10122c; }
+.portrait-hero .hero-art img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
+  animation: portrait-drift 24s ease-in-out infinite alternate;
+  transform-origin: 72% 44%;
+}
+.portrait-hero.motion-paused .hero-art img { animation-play-state: paused; }
+.portrait-hero .hero-shade {
+  background: linear-gradient(90deg, #0a0d22b0 0%, #0a0d2240 34%, transparent 60%),
+    linear-gradient(0deg, #100b10 0%, #100b1044 12%, transparent 29%, transparent 78%, #080b2055);
+}
+.portrait-hero::after { opacity: .08; }
+.portrait-hero .hero-ornament { color: #f5de61; opacity: .48; filter: none; }
+.portrait-hero .hero-content > .eyebrow { color: #d8d6e8; }
+.portrait-hero .eyebrow > svg { color: #ffe564; }
+.portrait-hero .eyebrow-divider { background: #f6df6599; }
+.portrait-hero .hero-pretitle { color: #f8eaa1; }
+.portrait-hero h1, .portrait-hero .ignite-line { color: #fffdf0; text-shadow: 0 2px 30px #070b2144; }
+.portrait-hero h1 { font-size: clamp(80px, 8.2vw, 145px); }
+.portrait-hero .hero-caption { display: none; }
+.portrait-hero .hero-period { color: #ffe65d; text-shadow: 0 0 25px #ffe65d22; }
+.portrait-hero .intro-line { background: #ead767; }
+.portrait-hero .hero-intro p { color: #e2deeb; }
+.portrait-hero .hero-intro p.muted { color: #b9b5ce; }
+.portrait-hero .intro-slash { color: #f1dd65; }
+.portrait-hero .primary-button { background: #f3dc5a; border-color: #fff1a2; color: #14172d; box-shadow: 0 7px 30px #070b2133; }
+.portrait-hero .primary-button:hover { background: #ffec85; }
+.portrait-hero .hero-secondary { color: #ece6e7; }
+.portrait-hero .hero-secondary span { color: #f3df6e; }
+.portrait-hero .hero-caption { color: #e5debd; border-color: #f6dc6280; background: linear-gradient(90deg, #0e112b66, transparent); }
+.portrait-hero .hero-caption > svg { color: #ffe873; filter: drop-shadow(0 0 7px #ffe25744); }
+.portrait-hero .hero-caption-index { color: #ddce84; }
+.portrait-hero .hero-side { color: #c9c5d9; }
+.portrait-hero .hero-foot { border-color: #d8d6ed33; }
+.portrait-hero .scroll-icon, .portrait-hero .motion-button { color: #f0dc78; border-color: #c6bb8090; }
+.portrait-hero .scroll-link > .mono, .portrait-hero .hero-location { color: #c6c2d4; }
+.portrait-hero .tiny-cross { color: #f1dc61; }
+@keyframes portrait-drift {
+  from { transform: scale(1.005); }
+  to { transform: scale(1.035); }
+}
+@media(max-width:850px) {
+  .portrait-hero .hero-art img { object-position: 64% center; }
+}
+@media(max-width:600px) {
+  .portrait-hero { min-height: 940px; }
+  .portrait-hero .hero-art { top: 74px; bottom: auto; height: 480px; }
+  .portrait-hero .hero-art img { object-position: 67% 40%; }
+  .portrait-hero .hero-shade { background: linear-gradient(0deg, #10122c 0%, #10122c 35%, #10122c99 43%, transparent 61%, transparent 87%, #0d102a33); }
+  .portrait-hero .hero-content { justify-content: flex-end; padding-top: 0; padding-bottom: 125px; }
+  .portrait-hero h1 { font-size: clamp(59px, 17vw, 85px); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .portrait-hero .hero-art img { animation: none; }
+}

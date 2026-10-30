@@ -1,0 +1,94 @@
+/* Shared reading rhythm. Each project keeps its own art direction. */
+@media (min-width: 701px) {
+  .section-label > span:first-child { font-size: 12px; }
+  .section-label > span:last-child, .section-title > p { font-size: 14px; line-height: 1.85; color: #a6b4c6; }
+  .chrome-header nav a { font-size: 13px; }
+  .chrome-hero .hero-identity .hero-identity-note, .chrome-hero .hero-note-right > p { font-size: 14px; line-height: 1.8; color: #233346; }
+  .chrome-hero .hero-name { font-size: 15px; color: #172737; }
+  .chrome-hero .note-index, .chrome-hero .chrome-bottom, .chrome-hero .caption-kicker { font-size: 11px; color: #263647; }
+  .chrome-hero .chrome-bottom a, .chrome-hero .chrome-motion { color: #263647; }
+  .chrome-hero .chrome-bottom .chrome-scroll { color: #edf4fc; text-shadow: 0 1px 5px #000; }
+  .chrome-hero .caption-kicker { color: #e5edf5; text-shadow: 0 1px 4px #000; }
+  .profile-section .profile-contact > * > span, .profile-section .profile-education > span,
+  .profile-section .profile-education > time, .profile-section .software-label { font-size: 12px; }
+  .profile-section .profile-photo-caption { font-size: 11px; }
+  .work-toolbar .filters button { font-size: 13px; }
+  .project-info h3 { font-size: clamp(20px, 1.35vw, 25px); line-height: 1.45; }
+  .project-type, .project-tags > span { font-size: 12px; }
+  .project-info > span, .project-meta { font-size: 12px; }
+  .contact-details > a, .contact-details > button, .contact-details > span { font-size: 14px; }
+  .contact-main > .eyebrow { font-size: 11px; color: #aebed2; }
+}
+
+/* The selected card and its controls fit a shorter desktop viewport. */
+.expertise-picker { --card-height: 530px; --card-width: 380px; }
+.expertise-deck { height: 595px; }
+.expertise-slot { top: 30px; }
+.expertise-slot .reflective-card__content { padding: 24px 28px 20px; }
+.capability-art { height: 140px; margin-block: 3px 9px; }
+.capability-symbol-render { width: 158px; height: 158px; }
+.capability-copy h3 { font-size: 28px; margin-bottom: 10px; }
+.capability-copy .capability-lead { font-size: 15px; margin-bottom: 12px; }
+.capability-copy .capability-description { font-size: 14px; line-height: 1.8; color: #b0bfd3; }
+.capability-tags { padding-top: 16px; }
+.capability-tags > span { font-size: 11px; }
+.capability-footer { margin-top: 16px; padding-top: 12px; }
+.capability-tabs > button { font-size: 12px; }
+.expertise-controls { gap: 18px; }
+.expertise .design-belief { margin-top: 65px; }
+
+/* Backgrounds stay quiet; the existing specular rim responds to proximity. */
+.journey-timeline .timeline-card.specular-button { box-shadow: inset 0 0 0 1px #a2b7d52b; background: #171e1b; }
+.journey-timeline .timeline-item:first-child .timeline-card.specular-button { background: linear-gradient(125deg, #004fff12, #1c2e4e26); }
+.journey-timeline .timeline-card-top time { font-size: 12px; color: #c2cedb; }
+.journey-timeline .timeline-card-top > span { font-size: 10px; }
+.journey-timeline .timeline-card h3 { font-size: 19px; line-height: 1.55; font-weight: 600; color: #edf2f8; }
+.journey-timeline .timeline-role { font-size: 13px; color: #bbc8d9; }
+.journey-timeline .timeline-card > p { font-size: 14px; line-height: 1.85; color: #a7b7c9; }
+.journey-timeline .timeline-side-label { font-size: 10px; color: #879bb5; }
+.journey-timeline .timeline-item { min-height: 205px; }
+.journey-timeline .timeline-item + .timeline-item { margin-top: -20px; }
+.journey-timeline .timeline-item:hover .timeline-card.specular-button,
+.journey-timeline .timeline-item:focus-within .timeline-card.specular-button { background: #202a22; }
+.journey-timeline .timeline-item:first-child:hover .timeline-card.specular-button,
+.journey-timeline .timeline-item:first-child:focus-within .timeline-card.specular-button { background: linear-gradient(125deg, #004fff25, #24395550); }
+
+/* Reserve one consistent safe zone for the fixed close control. */
+.project-dialog.fleet-project-dialog .fleet-case > header { padding-top: 94px; }
+.project-dialog.fleet-project-dialog .fleet-case > header > :is(.pc-hero-top,.mobile-hero-meta,.cc-hero-meta,.sc-hero-meta,.sk-hero-meta,.ag-hero-meta,.ip-hero-meta,.md-meta,.rv-hero-meta) { padding-right: 82px; }
+.project-dialog.fleet-project-dialog .dialog-close { top: 18px; right: 22px; min-height: 42px; padding: 9px 15px; font-size: 12px; box-shadow: 0 3px 14px #0002; }
+.fleet-case :is(.pc-heading,.mc-section-heading,.cc-heading,.sc-heading,.sk-heading,.ag-heading,.ip-title,.md-heading,.rv-heading) > p { font-size: 16px; line-height: 1.95; max-width: 700px; }
+.fleet-case :is(.pc-label,.mc-kicker,.cc-label,.sc-eyebrow,.sk-label,.ag-label,.ip-label,.md-label,.rv-eyebrow) { font-size: 11px; line-height: 1.8; }
+.fleet-case :is(.pc-feature-notes,.ip-traits,.rv-pair-notes,.ag-home-notes) p { font-size: 15px; line-height: 1.9; }
+.fleet-case :is(.pc-intro,.sc-intro,.ag-intro,.sk-intro) p { font-size: 16px; line-height: 1.95; }
+.fleet-case :is(.rv-identity-notes,.rv-pair-notes,.pc-caption,.pc-feature-notes) p { font-size: 15px; line-height: 1.9; }
+.fleet-case :is(.pc-screen,.rv-full-image,.ag-home-handheld,.md-device-board) figcaption { font-size: 12px; line-height: 1.8; }
+.pc-system :is(.pc-heading > p,.pc-color-grid p,.pc-gradients p,.pc-footer > p) { color: #afbdcf; }
+.pc-case .pc-screen figcaption > span { font-size: 10px; }
+.fleet-case [data-fleet-reveal="visible"] { animation-duration: .65s; animation-delay: 0s; }
+
+@media (min-width: 1500px) {
+  .expertise-picker { --card-width: 410px; }
+}
+@media (max-width: 850px) {
+  .expertise-picker { --card-width: 345px; --card-height: 550px; }
+  .expertise-deck { height: 615px; }
+  .capability-tabs > button { font-size: 10px; padding: 10px; }
+}
+@media (max-width: 700px) {
+  .journey-timeline .timeline-item { min-height: auto; margin-top: 0; }
+  .journey-timeline .timeline-card h3 { font-size: 18px; }
+  .project-dialog.fleet-project-dialog .fleet-case > header { padding-top: 85px; }
+  .project-dialog.fleet-project-dialog .fleet-case > header > :is(.pc-hero-top,.mobile-hero-meta,.cc-hero-meta,.sc-hero-meta,.sk-hero-meta,.ag-hero-meta,.ip-hero-meta,.md-meta,.rv-hero-meta) { padding-right: 0; }
+  .project-dialog.fleet-project-dialog .dialog-close { right: 14px; top: 14px; }
+}
+@media (max-width: 600px) {
+  .expertise-picker { --card-width: 292px; --card-height: 550px; }
+  .expertise-deck { height: 615px; }
+  .expertise-slot .reflective-card__content { padding: 22px; }
+  .capability-art { height: 130px; }
+  .capability-copy h3 { font-size: 25px; }
+  .capability-copy .capability-description { font-size: 13px; }
+  .capability-tabs > button { font-size: 10px; padding: 8px; }
+  .fleet-case :is(.pc-heading,.sc-heading,.ip-title,.md-heading,.rv-heading) > p { font-size: 15px; }
+}

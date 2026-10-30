@@ -1,0 +1,5 @@
+Tool: built-in image_gen, edit mode.
+Source: profile-blue-glasses-retouched.png
+Output: profile-lime-glasses.png
+
+Edit target: supplied retouched portrait for a personal design portfolio. Change ONLY the color of the blue rectangular sunglasses (lenses and colored rim) and the existing blue directional light to acid yellow-green inspired by #c1ff2f. Keep the lenses translucent with the same eyes visible naturally beneath, glossy silver edge reflections and realistic highlights. Replace blue light on the right cheek, neck and hair with restrained realistic yellow-green studio side-light at the SAME strength and footprint. Keep natural skin tones in neutral-lit areas; no full-image green wash. Keep the SAME person, facial geometry, beauty retouch, expression, head angle, long dark hair, clothing, gray background, framing and tall aspect ratio unchanged. No further facial reshaping, no neon glowing eyes, no text, no watermark. Photorealistic controlled color replacement.

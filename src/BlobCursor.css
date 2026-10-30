@@ -1,0 +1,23 @@
+.blob-cursor {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.blob-cursor-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.blob-cursor.portfolio-blob-cursor {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .portfolio-blob-cursor { display: none; }
+}

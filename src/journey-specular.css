@@ -1,0 +1,13 @@
+/* Adapt the supplied specular rim to informational timeline cards. */
+.journey-timeline .timeline-card.specular-button{display:block;margin:0;padding:24px 27px;line-height:normal;letter-spacing:normal;text-align:left;border:0;border-radius:8px;cursor:default;overflow:visible;box-shadow:0 12px 35px #03091433;-webkit-backdrop-filter:none;backdrop-filter:none}
+.journey-timeline .timeline-card.specular-button>:not(canvas){position:relative;z-index:2}
+.journey-timeline .timeline-card.specular-button:active{transform:none}
+.journey-timeline .timeline-card.specular-button:focus-visible{outline:2px solid var(--timeline-light);outline-offset:5px}
+.journey-timeline .timeline-card .specular-button__light{z-index:1;border-radius:inherit}
+.journey-timeline .timeline-card.specular-button:hover,.journey-timeline .timeline-card.specular-button:focus-visible{box-shadow:0 15px 40px #0005}
+.journey-timeline .timeline-item:first-child .timeline-card.specular-button{background:linear-gradient(125deg,rgba(0,79,255,.11),rgba(28,46,78,.18));-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.journey-timeline .timeline-item:first-child:hover .timeline-card.specular-button,.journey-timeline .timeline-item:first-child:focus-within .timeline-card.specular-button{background:linear-gradient(125deg,rgba(0,79,255,.18),rgba(42,66,110,.26))}
+.timeline-item:first-child:hover .timeline-node,.timeline-item:first-child:focus-within .timeline-node{background:#004fff;box-shadow:0 0 12px #004fff99}
+.timeline-item:first-child .timeline-segment{background:#004fff;box-shadow:0 0 14px #004fff99}
+@media(max-width:1100px){.journey-timeline .timeline-card.specular-button{padding:21px 18px}}
+@media(max-width:700px){.journey-timeline .timeline-card.specular-button{padding:22px 19px}}
