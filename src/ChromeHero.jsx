@@ -1,3 +1,4 @@
+import SymbolIcon from './SymbolIcon';
 import MagicRings from './MagicRings';
 import React, { useEffect, useRef, useState } from 'react';
 
@@ -51,9 +52,9 @@ export default function ChromeHero({ paused, onToggleMotion }) {
     </div>
     <div className="chrome-vignette" aria-hidden="true"/>
     <div className="hero-note hero-note-left hero-identity"><p className="hero-name">张子璇 <span>/ ZIXUAN</span></p><h1 className="hero-roles-heading"><span>UI设计师</span><span>平面设计</span><span>产品助理</span></h1><p className="hero-identity-note">视觉表达 × 产品思考</p></div>
-    <aside className="hero-note hero-note-right"><span className="availability-stamp">AVAILABLE FOR<br/>NEW PROJECTS ↗</span><span className="note-cross">✳</span><p className="hero-note-title">从想法，到可用的产品。</p><p>以清晰的逻辑构建体验，<br/>用有感知的视觉传递价值。</p><span className="note-index">UI / GRAPHIC / PRODUCT</span></aside>
-    <div className="chrome-caption"><span className="caption-kicker">DESIGN WITH PURPOSE / CREATE WITH FEELING</span><h2>让想象有形，<span>让体验发生。</span></h2><a className="chrome-explore" href="#work">探索作品 <span>↗</span></a></div>
-    <div className="chrome-bottom"><span>9+ YEARS OF DESIGN EXPLORATION</span><a href="#about" className="chrome-scroll">SCROLL TO EXPLORE <span>↓</span></a><button onClick={onToggleMotion} className="chrome-motion" aria-label={paused ? '播放背景动画' : '暂停背景动画'} aria-pressed={paused}><span>{paused ? '▶' : 'Ⅱ'}</span> MOTION {paused ? 'OFF' : 'ON'}</button></div>
+    <aside className="hero-note hero-note-right"><span className="availability-stamp">AVAILABLE FOR<br/>NEW PROJECTS ↗︎</span><span className="note-cross"><SymbolIcon type="spark"/></span><p className="hero-note-title">从想法，到可用的产品。</p><p>以清晰的逻辑构建体验，<br/>用有感知的视觉传递价值。</p><span className="note-index">UI / GRAPHIC / PRODUCT</span></aside>
+    <div className="chrome-caption"><span className="caption-kicker">DESIGN WITH PURPOSE / CREATE WITH FEELING</span><h2>让想象有形，<span>让体验发生。</span></h2><a className="chrome-explore" href="#work">探索作品 <span><SymbolIcon type="north-east"/></span></a></div>
+    <div className="chrome-bottom"><span>9+ YEARS OF DESIGN EXPLORATION</span><a href="#about" className="chrome-scroll">SCROLL TO EXPLORE <span><SymbolIcon type="down"/></span></a><button onClick={onToggleMotion} className="chrome-motion" aria-label={paused ? '播放背景动画' : '暂停背景动画'} aria-pressed={paused}><span>{paused ? <SymbolIcon type="play"/> : 'Ⅱ'}</span> MOTION {paused ? 'OFF' : 'ON'}</button></div>
   </section>;
 }
 

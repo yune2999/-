@@ -1,3 +1,4 @@
+import SymbolIcon from './SymbolIcon';
 import ProjectBrief from './ProjectBrief';
 import React, {useEffect, useRef} from 'react';
 import './restaurant-case.css';
@@ -15,5 +16,5 @@ export default function RestaurantCaseStudy({onNext}){const ref=useRef(null);use
 <section className="rv-section rv-uniform"><Heading n="05" en="WORN WITH WARMTH" description="立领长袖上衣与同色围裙统一服务着装，前胸金色标志保持利落。山水线描延伸至围裙和雨伞，让品牌走出餐桌。">把待客的温度，<br/><span>穿在身上。</span></Heading><figure className="rv-full-image" data-rv-enter><img src={base+'jade-uniform.webp'} alt="徽态奶奶墨绿长袖立领上衣、山水围裙及绿金雨伞设计" loading="lazy" width="1536" height="1024"/><figcaption><span>STAFF UNIFORM / APRON / UMBRELLA</span><span>立领长袖 · 金色刺绣 · 山水线描</span></figcaption></figure></section>
 
 <section className="rv-section rv-lightboxes"><Heading n="06" en="FROM IDENTITY TO DINING SPACE" description="品牌最终回到餐厅现场。明档灯箱将山水产地、菜品与点餐信息连在一起，用更直观的画面带出乡味与鲜味。">从品牌识别，<br/>走进<span>热气腾腾的一餐。</span></Heading><div className="rv-sign-heading" data-rv-enter><span>01 / 明档点餐灯箱</span><p>多菜品信息整合 / 大厅点餐场景</p></div><figure className="rv-lightbox-frame" data-rv-enter><img src={base+'lightbox-menu.webp'} alt="用户提供的大厅明档点餐灯箱，完整菜品与价格编排" loading="lazy"/></figure><div className="rv-sign-heading" data-rv-enter><span>02 / 河江鲜主题灯箱</span><p>主题菜品呈现 / 空间视觉延展</p></div><figure className="rv-lightbox-frame rv-lightbox-wide" data-rv-enter><img src={base+'lightbox-river.webp'} alt="用户提供的态奶奶河江鲜明档灯箱，呈现鱼头、甲鱼与江鲜菜品" loading="lazy"/></figure><p className="rv-source-note">Logo 与明档灯箱为提供的原始设计；周边为本次 VI 概念延展。</p></section>
-<footer className="rv-footer"><River/><span className="rv-eyebrow">HUÌ TÀI NǍI NAI / BRAND EXPERIENCE</span><h3>乡味入席，<br/><span>温暖随行。</span></h3><p>徽态奶奶 · 餐饮品牌视觉延展</p><button onClick={onNext}>下一个项目 <span>↗</span></button></footer>
+<footer className="rv-footer"><River/><span className="rv-eyebrow">HUÌ TÀI NǍI NAI / BRAND EXPERIENCE</span><h3>乡味入席，<br/><span>温暖随行。</span></h3><p>徽态奶奶 · 餐饮品牌视觉延展</p><button onClick={onNext}>下一个项目 <span><SymbolIcon type="north-east"/></span></button></footer>
 </div>}
